@@ -3,7 +3,7 @@ var $ = require('jquery');
 
 var Post = Backbone.Model.extend({
    idAttribute:"_id",
-   urlRoot: 'http://tiny-lasagna-server.herokuapp.com/collections/post',
+   urlRoot: 'https://tiny-lasagna-server.herokuapp.com/collections/post',
   initialize: function() {
     console.log('a new post is born');
   }
@@ -11,7 +11,7 @@ var Post = Backbone.Model.extend({
 
 var PostCollection = Backbone.Collection.extend({
   model: Post,
-  url: 'http://tiny-lasagna-server.herokuapp.com/collections/post'
+  url: 'https://tiny-lasagna-server.herokuapp.com/collections/post'
 });
 
 

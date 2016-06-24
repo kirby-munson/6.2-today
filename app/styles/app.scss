@@ -6,8 +6,9 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
 
-$blue:#00819c;
+$blue:#5f9ea0;
 $red:#bb4444;
+$yellow: #7b7d7b;
 
 
 
@@ -22,11 +23,11 @@ img {
 }
 
 .app{
-  background-color: $red;
+  background-color: $yellow;
   margin-top: 50px;
   margin-right: 20px;
   color: white;
-  padding-top: 30px;
+  padding-top: 37px;
 }
 
 .start{
@@ -38,6 +39,7 @@ img {
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
+  font-weight: bold;
 }
 
 .start:hover{
@@ -47,7 +49,7 @@ img {
 }
 
 .post-form{
-  border: 5px solid $blue;
+  border: 8px solid $blue;
   text-align: center;
   padding: 10px;
   margin-top: 50px;
@@ -58,10 +60,15 @@ img {
 }
 
 .submit-button{
-  background-color: $red;
+  background-color: $yellow;
   border-style: hidden;
   color: white;
   font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.submit-button:hover{
+  background-color: darken($yellow, 14);
 }
 
 h3{
@@ -89,4 +96,5 @@ h1{
 .btn-danger{
   font-family: 'Roboto', sans-serif;
   color: white;
+  margin-bottom: 10px;
 }
